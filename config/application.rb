@@ -36,5 +36,8 @@ module RailsStarter
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Use sidekiq for active job
+    config.active_job.queue_adapter = :sidekiq
   end
 end
